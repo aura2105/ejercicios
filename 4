@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Pedir licencia
+        Console.Write("Tiene licencia? (si/no): ");
+        string licencia = Console.ReadLine().ToLower();
+
+        // Pedir experiencia
+        Console.Write("Ingrese los anos de experiencia: ");
+        int anosExperiencia = int.Parse(Console.ReadLine());
+
+        // Validar condiciones
+        if (licencia == "si" && anosExperiencia >= 2)
+        {
+            Console.WriteLine("Puedes aplicar para el puesto.");
+        }
+        else
+        {
+            Console.WriteLine("No puedes aplicar para el puesto.");
+        }
+    }
+}
